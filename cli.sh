@@ -13,6 +13,7 @@ readonly config_folder="$HOME/.config"
 readonly desktop_folder="$HOME/Desktop"
 readonly systemd_folder="$HOME/.local/share/systemd/user"
 readonly autoref_folder="$HOME/.local/share/auto-referees"
+readonly audioref_path="$HOME/audioref"
 declare -A app_repo_map
 app_repo_map["ssl-game-controller"]="ssl-game-controller"
 app_repo_map["ssl-ref-client"]="ssl-game-controller"
@@ -185,8 +186,6 @@ function uninstall_autoref_erforce() {
 }
 
 function install_audioref() {
-  local audioref_path="audioref"
-
   if [[ ! -d "${audioref_path}" ]]; then
     sudo apt install -y python3-venv python3-dev libasound2-dev
 
