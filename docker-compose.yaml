@@ -1,6 +1,6 @@
 services:
   ssl-vision-client:
-    image: robocupssl/ssl-vision-client:2.1.0@sha256:2694ba31a1f5d99460b283d03b0f650d4a6317774bfe175a61deb0a12753ee5d
+    image: robocupssl/ssl-vision-client:2.1.1@sha256:a4ab207a72576ff0478e3bdaa6bffe16a9942f640d210342edf01e0b978f522f
     command: [ "-address", ":8082" ]
     network_mode: host
     restart: on-failure
